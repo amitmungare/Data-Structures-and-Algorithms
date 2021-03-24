@@ -8,7 +8,7 @@ public class LastIndexOfNumber {
 	
 	public static int index(int arr[], int x, int si) {
 		
-		if(si == 0){
+		if(si == -1){
 			return -1;	
 		}
 		
@@ -23,7 +23,7 @@ public class LastIndexOfNumber {
 	
 public static void main(String[] args) {
 		
-		int input[] = {1,6,3,4,5,6,7};
+		int input[] = {8,6,3,4,5,6,7};
 		int x = 8;
 		System.out.println(lastIndex(input, x));
 	}
