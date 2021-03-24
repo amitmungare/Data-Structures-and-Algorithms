@@ -14,10 +14,10 @@ public class Palindrome {
 		}
 		
 		if(str.charAt(si) == str.charAt(ei)) {
-			return false;	
+			return pal(str, si+1, ei-1);
+				
 		}
-		
-		return pal(str, si+1, ei-1);
+		return false;
 		
 	}
 
