@@ -13,16 +13,16 @@ public class SumOfArray {
 			sarr[i-1] = arr[i];
 		}
 		
-		return arr[0] +sum(sarr);
+		int sumarr = arr[0] +sum(sarr);
 		
-		
+		return sumarr;
 		
 	}
 	
 	
 	public static void main(String[] args) {
 		
-		int input[] = {1,2,3,4,5};
+		int input[] = {1};
 		System.out.println(sum(input));
 	}
 
