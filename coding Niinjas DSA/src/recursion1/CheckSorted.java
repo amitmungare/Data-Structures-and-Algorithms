@@ -23,13 +23,36 @@ public class CheckSorted {
 		
 	}
 	
+	public static boolean sortedbetter(int arr[]) {
+		
+		return sort(arr,0);
+		
+	}
+	
+	
+	public static boolean sort(int arr[], int n) {
+		
+		if(arr.length-1 == n) {
+			return true;
+		}
+		
+		if(arr[n] >= arr[n+1]) {
+			return false;
+		}
+		
+		return sort(arr, n+1);
+		
+	}
+	
+	
 	
 	
 public static void main(String[] args) {
 		
 		int input[] = {1,2,3,4};
 		
-		System.out.println(sorted(input));
+//		System.out.println(sorted(input));
+		System.out.println(sortedbetter(input));
 	}
 
 }
