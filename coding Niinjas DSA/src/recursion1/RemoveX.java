@@ -15,6 +15,7 @@ public class RemoveX {
 			return s.substring(si,si+1)+removeX(s,si+1);
 		}
 		return removeX(s, si+1);
+		//amit
 		
 	}
 
