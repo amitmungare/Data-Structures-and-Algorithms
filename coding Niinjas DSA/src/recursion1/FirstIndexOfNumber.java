@@ -8,9 +8,10 @@ public class FirstIndexOfNumber {
 	
 	public static int index(int arr[], int x, int si) {
 		
-		if(arr.length-1 ==si) {
-				return -1;	
+		if(arr.length ==si){
+			return -1;	
 		}
+		
 		
 		if(arr[si]==x) {
 			return si;
@@ -23,7 +24,7 @@ public class FirstIndexOfNumber {
 public static void main(String[] args) {
 		
 		int input[] = {1,2,3,4,5,6};
-		int x = 5;
+		int x = 6;
 		System.out.println(firstIndex(input, x));
 	}
 
