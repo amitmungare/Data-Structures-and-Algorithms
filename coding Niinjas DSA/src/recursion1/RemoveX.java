@@ -11,16 +11,15 @@ public class RemoveX {
 			return "";
 		}
 		
-		if(s.charAt(si) != 'x') {
-			return s.substring(si,si+1)+removeX(s,si+1);
+		if(s.charAt(si)=='x') {
+			return removeX(s,si+1);
 		}
-		return removeX(s, si+1);
-		//amit
+		return s.charAt(si)+removeX(s,si+1);
 		
 	}
 
 	public static void main(String[] args) {
-		String input ="amxixxt";
+		String input ="xxamxixxtxxx";
 		System.out.println(removeX(input));
 	}
 	
