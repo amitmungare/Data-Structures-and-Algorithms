@@ -26,8 +26,7 @@ public class QuickSort {
 		int pivotPos = si+count;
 		int temp = a[pivotPos];
 		a[pivotPos] = a[si];
-		a[si] = temp;
-		
+		a[si] = temp;	
 		
 		int i=si;
 		int j=ei;
@@ -49,7 +48,6 @@ public class QuickSort {
 	}
 	
 	public static void quickSort(int[] input) {
-		
 		quickSort(input, 0 , input.length-1);
 	}
 	
