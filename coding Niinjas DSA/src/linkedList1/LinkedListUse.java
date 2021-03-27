@@ -18,7 +18,7 @@ public class LinkedListUse {
 		Node<Integer> head = null, tail=null;
 		Scanner s=new Scanner(System.in);
 		int data = s.nextInt();
-		
+		 
 		while(data != -1) {
 			Node<Integer> newNode = new Node<Integer>(data);
 			if(head == null) {
@@ -43,24 +43,9 @@ public class LinkedListUse {
 	}
 	
 	
-	
-	public static void length(Node<Integer> head) {
-		
-		int count=0;
-		while(head != null) {
-			count++;
-			head =head.next;
-		}
-		System.out.println();
-		System.out.println(count);
-	}
-	
-	
-
 	public static void main(String[] args) {		
 		Node<Integer> head = input();
 		print(head);
-		length(head);
 	}
 
 	
