@@ -25,16 +25,6 @@ public static Node<Integer> input() {
 }
 
 
-
-public static void print(Node<Integer> head) {		
-	while(head != null) {
-		System.out.print(head.data+" ");
-		head = head.next;
-	}		
-}
-
-
-
 public static void length(Node<Integer> head) {
 	
 	int count=0;
@@ -50,7 +40,6 @@ public static void length(Node<Integer> head) {
 
 public static void main(String[] args) {		
 	Node<Integer> head = input();
-	print(head);
 	length(head);
 }
 
