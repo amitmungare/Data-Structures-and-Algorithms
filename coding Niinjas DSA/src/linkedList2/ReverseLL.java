@@ -11,13 +11,11 @@ public class ReverseLL {
 			return head;
 		}
 		
+		Node<Integer> rtail =head.next;
 		Node<Integer> smallans =rev(head.next);
-		Node<Integer> temp = smallans;
-		while(temp.next != null){
-			temp = temp.next;
-		}
-		temp.next=head;
+		rtail.next = head;
 		head.next =null;
+		
 		return smallans;
 		
 	}
