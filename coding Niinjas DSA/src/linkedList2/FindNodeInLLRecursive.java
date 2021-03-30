@@ -9,16 +9,22 @@ public class FindNodeInLLRecursive {
 	}
 
 	public static int find(Node<Integer> head, int n, int si) {
-    	
+    	if(head ==null) {
+    		return -1;
+    	}
+		
 		if(head.data ==n) {
 			return si;
-		}
-		
+		}		
 		if(head.data != n) {
 			return -1;
 		}
 		
 		int ans= find(head.next, n, si+1);
+		
+		if(ans == -1){
+	  		return -1;
+	    }
 		
 		return ans;
 		
