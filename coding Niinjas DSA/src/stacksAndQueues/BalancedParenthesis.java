@@ -15,14 +15,12 @@ public class BalancedParenthesis {
 				if(exp.charAt(i)==')') {
 					if(s.isEmpty()) {
 						return false;
-					}
-					
+					}				
 					if(s.top()=='(') {
 						s.pop();						
 					}else {
 						return false;
-					}
-					
+					}					
 				}			
 			i++;	
 			}
@@ -34,12 +32,10 @@ public class BalancedParenthesis {
 	 
 	 
 
-	public static void main(String[] args) {		
-
-		
-	String str = "((())";
-	boolean t =isBalanced(str);
-	System.out.println(t);
+	public static void main(String[] args) {				
+		String str = "((())";
+		boolean t =isBalanced(str);
+		System.out.println(t);
 		
 	}
 
