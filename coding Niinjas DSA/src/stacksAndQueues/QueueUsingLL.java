@@ -12,22 +12,22 @@ public class QueueUsingLL<T> {
 		size=0;
 	}
 	
-	int size() {
+	public int size() {
 		return size;
 	}
 	
-	boolean isEmpty() {
+	public boolean isEmpty() {
 		return (size==0);
 	}
 	
-	T front() {
+	public T front() {
 		if(size==0) {
 			return null;
 		}
 		return front.data;
 	}
 	
-	void enqueue(T value) {
+	public void enqueue(T value) {
 		Node<T> newNode = new Node<T>(value);
 		if(rear ==null) {
 			front=newNode;
@@ -39,7 +39,7 @@ public class QueueUsingLL<T> {
 		size++;
 	}
 	
-	T dequeue() {
+	public T dequeue() {
 		if(size==0) {
 			return null;
 		}
