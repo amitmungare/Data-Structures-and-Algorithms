@@ -24,33 +24,25 @@ public class TreeUse {
 	
 	public static TreeNode<Integer> inputLW(){ 
 		Scanner s=new Scanner(System.in);
-		// Taking the root data
 		System.out.println("enter root data");
 		int rootData = s.nextInt();
 		
 		
-		QueueUsingLL<TreeNode<Integer>> pendingNodes = new QueueUsingLL<>();
-		
-		TreeNode<Integer> root = new TreeNode<Integer>(rootData);
-		
+		QueueUsingLL<TreeNode<Integer>> pendingNodes = new QueueUsingLL<>();		
+		TreeNode<Integer> root = new TreeNode<Integer>(rootData);		
 		pendingNodes.enqueue(root);
 		
 		while(!pendingNodes.isEmpty()) {
 			
-			TreeNode<Integer> frontNode = pendingNodes.dequeue();
-			
+			TreeNode<Integer> frontNode = pendingNodes.dequeue();			
 			System.out.println("Enter num of children of "+frontNode.data);
 			int numChildren = s.nextInt();
 			
-			for(int i =0; i<numChildren; i++) {
-				
-				System.out.println("Enter "+(i+1)+"th child of "+frontNode.data);
-				
-				int child=s.nextInt();
-				
+			for(int i =0; i<numChildren; i++) {				
+				System.out.println("Enter "+(i+1)+"th child of "+frontNode.data);				
+				int child=s.nextInt();				
 				TreeNode<Integer> childNode =new TreeNode<Integer>(child);
-				frontNode.children.add(childNode);
-				
+				frontNode.children.add(childNode);				
 				pendingNodes.enqueue(childNode);
 			}
 		}
