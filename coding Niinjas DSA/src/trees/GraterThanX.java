@@ -20,7 +20,7 @@ public class GraterThanX {
 		return count;
 	}
 	
-public static void main(String[] args) {
+	public static void main(String[] args) {
 		
 		TreeNode<Integer> root= input();
 		System.out.println(Greater(root,2));
