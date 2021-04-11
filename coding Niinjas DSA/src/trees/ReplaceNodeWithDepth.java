@@ -1,0 +1,43 @@
+package trees;
+
+public class ReplaceNodeWithDepth {
+
+	public static void replace(TreeNode<Integer> root){	
+		if(root==null) {
+			return ;
+		}
+		replace(root,0);	
+	}
+	
+	public static void replace(TreeNode<Integer> root, int si) {
+
+		root.data=si;
+		for(int i=0; i<root.children.size(); i++) {
+			replace(root.children.get(i), si+1);		
+		}
+		
+	}
+
+	public static void main(String[] args) {		
+		TreeNode<Integer> root= input();
+		replace(root);
+	}
+	
+	private static TreeNode<Integer> input() {
+		TreeNode<Integer> root0 =new TreeNode<Integer>(1);
+		TreeNode<Integer> root1 =new TreeNode<Integer>(2);
+		TreeNode<Integer> root2 =new TreeNode<Integer>(3);
+		TreeNode<Integer> root3 =new TreeNode<Integer>(4);
+		TreeNode<Integer> root4 =new TreeNode<Integer>(5);
+		TreeNode<Integer> root5 =new TreeNode<Integer>(6);
+		TreeNode<Integer> root6 =new TreeNode<Integer>(7);
+		root0.children.add(root1);
+		root0.children.add(root2);
+		root0.children.add(root3);
+		root1.children.add(root4);
+		root1.children.add(root5);
+		root2.children.add(root6);
+		return root0;
+	}
+
+}
