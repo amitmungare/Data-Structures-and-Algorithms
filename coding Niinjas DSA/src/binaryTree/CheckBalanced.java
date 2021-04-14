@@ -3,9 +3,8 @@ package binaryTree;
 public class CheckBalanced {
 	
 	public static int height(BinaryTreeNode<Integer>root) {
-		if(root==null) {
-			return 0;
-		}
+		if(root==null) return 0;
+		
 		int num1=height(root.left);
 		int num2=height(root.right);
 		
@@ -27,9 +26,7 @@ public class CheckBalanced {
 			}
 		}
 		return false;
-		
-		
-	
+			
 	}
 
 
