@@ -17,8 +17,10 @@ public class CheckRedundantBrackets {
 		Stack<Character> s =new Stack<>(); 
 		
 		for(int i=0;i<exp.length();i++) {
+			
 			if(exp.charAt(i)=='(' || find(exp.charAt(i))) {
 				s.push(exp.charAt(i));
+				
 			}else if(exp.charAt(i)==')') {
 				boolean check =false;
 				
@@ -40,7 +42,7 @@ public class CheckRedundantBrackets {
 
 	public static void main(String[] args) {
 		
-		String s="(((a+b)+c))";
+		String s="(a+b)+c";
 		System.out.println(check(s));
 		
 	}
