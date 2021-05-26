@@ -9,7 +9,8 @@ public class MaxHeap {
 			int left = 2*i+1;
 			int right = 2*i+2;
 			
-			if(	arr[i] < arr[left] || right <arr.length && arr[i] < arr[right]) {
+			if(	arr[i] < arr[left] || 
+					right <arr.length && arr[i] < arr[right]) {
 				return false;
 			}			
 		}
