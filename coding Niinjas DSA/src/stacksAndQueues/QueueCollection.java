@@ -12,8 +12,6 @@ public class QueueCollection {
 	public static void main(String[] args) {
 		
 		Queue<Integer> queue =new LinkedList<Integer>();
-			
-			
 		
 		
 		int[] arr= {14,22,35,42,50};
