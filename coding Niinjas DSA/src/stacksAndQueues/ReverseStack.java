@@ -19,6 +19,7 @@ public class ReverseStack{
 			extra.push(top);
 		}
 	
+		
 		input.push(lastele);
 	
 		while(!extra.empty()){
