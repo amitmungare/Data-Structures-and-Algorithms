@@ -10,10 +10,8 @@ public class MultiplesOf3and5 {
 			
 			if(i%3 ==0 || i%5==0) {
 				sum +=i;
-			}
-			
+			}			
 		}
-
 		System.out.println(sum);
 	}
 
