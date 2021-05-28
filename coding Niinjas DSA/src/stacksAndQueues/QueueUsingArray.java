@@ -56,8 +56,7 @@ public class QueueUsingArray {
 		
 		data[rear] =ele;
 		
-	}
-	
+	}	
 	int dequeue() {
 		if(size==0) {
 			return -1;
@@ -65,7 +64,7 @@ public class QueueUsingArray {
 		int temp=data[front];
 		size--;
 		
-		front= (front+1)% data.length;
+		front= (front+1) % data.length;
 //		front++;
 //		if(front == data.length) {
 //			front=0;
