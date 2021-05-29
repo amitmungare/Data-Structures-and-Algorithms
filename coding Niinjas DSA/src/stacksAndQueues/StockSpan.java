@@ -16,6 +16,7 @@ public class StockSpan {
 				s.pop();
 			}
 			
+			
 			if(s.isEmpty()) {
 				ans[i]=i+1;
 			}else {
