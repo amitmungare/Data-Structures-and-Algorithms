@@ -20,7 +20,7 @@ public class EvenAfterOddLL {
 					event = event.next;
 				}										
 			}else {
-				if(evenh == null) {
+				if(oddh == null) {
 					oddh = head;
 					oddt =head;
 				}else {
@@ -42,6 +42,40 @@ public class EvenAfterOddLL {
 		}
 		
 		return oddh;
+		
+//		 if(head==null)return head;
+//	        
+//		 Node<Integer> oddh=null, oddt=null, event=null, evenh=null;
+//	        
+//	        while(head != null){
+//	            if(head.data%2==0){
+//	                if(evenh==null){
+//	                    evenh=head;
+//	                    event=head;
+//	                }
+//	                event.next=head;
+//	                event =event.next;
+//	            }else{
+//	                if(oddh==null){
+//	                    oddh=head;
+//	                    oddt=head;
+//	                }
+//	                oddt.next=head;
+//	                oddt =oddt.next;
+//	            }
+//	            head=head.next;
+//	        }
+//	        
+//	        if(oddh==null){
+//	            return evenh;
+//	        }else{
+//	            oddt.next=evenh;
+//	        }
+//	        if(evenh!=null){
+//	            event.next=null;
+//	        }
+//	        
+//	        return oddh;
 		
 	}
 
