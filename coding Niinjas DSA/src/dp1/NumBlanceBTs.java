@@ -35,6 +35,8 @@ public class NumBlanceBTs {
 		s[0]=1;
 		s[1]=1;
 		
+		
+		
 		for(int i=2; i<=n; i++) {
 			
 			int x=s[i-1];
