@@ -31,6 +31,8 @@ public class Reverse {
 		System.out.print(head.data+" ");
 		
 	}
+	
+	
 
 	public static void main(String[] args) {		
 		Node<Integer> head = input();
