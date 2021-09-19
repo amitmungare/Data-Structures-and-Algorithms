@@ -2,7 +2,7 @@ package binaryTree;
 
 import stacksAndQueues.QueueUsingLL;
 
-public class MIrrorBinaryTree {
+public class MirrorBinaryTree {
 	
 	public static void mirror(BinaryTreeNode<Integer> root){
 		
