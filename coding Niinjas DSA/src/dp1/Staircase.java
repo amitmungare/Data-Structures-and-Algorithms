@@ -13,6 +13,11 @@ public class Staircase {
         	s[i]=s[i-1]+s[i-2]+s[i-3];
         }
         return s[n];
+        
+        
+       
+//        int arr[] = new int[5];
+//        System.out.println();
 	}
 
 	public static void main(String[] args) {
